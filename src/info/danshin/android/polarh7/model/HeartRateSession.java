@@ -57,4 +57,9 @@ public class HeartRateSession implements Serializable {
 		this.dateEnded = dateEnded;
 	}
 	
+	@Override
+	public String toString() {
+		return name == null ? "Session #" + id : name;
+	}
+	
 }

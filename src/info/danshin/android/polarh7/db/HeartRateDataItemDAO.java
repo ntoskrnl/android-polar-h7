@@ -1,8 +1,11 @@
 package info.danshin.android.polarh7.db;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import info.danshin.android.polarh7.model.HeartRateDataItem;
+import info.danshin.android.polarh7.model.HeartRateSession;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -57,6 +60,15 @@ public class HeartRateDataItemDAO extends BaseDAO<HeartRateDataItem> implements 
 	@Override
 	public void delete(long id) {
 		getDatabase().delete(TABLE_NAME, _ID + " = " + id, null);
+	}
+	
+	public List<HeartRateDataItem> getAllItemsOfSession(Long sessionId) {
+		Cursor cursor = getDatabase().query(TABLE_NAME, ALL_COLUMNS, COLUMN_NAME_SESSION_ID + " = " + sessionId, null, null, null, null);
+		List<HeartRateDataItem> items = new ArrayList<HeartRateDataItem>();
+		while (cursor.moveToNext()) {
+			items.add(cursorToHeartRateDataItem(cursor));
+		}
+		return items;
 	}
 	
 	private HeartRateDataItem cursorToHeartRateDataItem(Cursor cursor) {

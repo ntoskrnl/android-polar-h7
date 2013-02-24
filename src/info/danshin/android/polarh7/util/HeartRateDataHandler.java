@@ -84,6 +84,7 @@ public class HeartRateDataHandler extends Thread {
 				Log.i("HeartRateDataHandler", "new session created: id = " + session.getId());
 			}
 			lastTimeStamp = item.getTimeStamp().getTime();
+			item.setSessionId(currentSession.getId());
 			hrDAO.insert(item);
 			Log.i("HeartRateDataHandler",
 				"new item added to DB: " + item.getRrTime() + " id = " + item.getId());

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="info.danshin.android.polarh7"
     android:versionCode="1"
-    android:versionName="1.0.1" >
+    android:versionName="1.0.2" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -26,11 +26,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccountSettingsActivity"
+        <activity
+            android:name="info.danshin.android.polarh7.AccountSettingsActivity"
             android:label="@string/title_activity_account_settings"
-            android:parentActivityName="info.danshin.android.sandbox.MainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:parentActivityName="info.danshin.android.sandbox.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value="info.danshin.android.sandbox.MainActivity" />
         </activity>
+        <activity
+            android:name="info.danshin.android.polarh7.SessionListActivity"
+            android:label="@string/title_session_list"
+            android:parentActivityName="info.danshin.android.polarh7.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.danshin.android.polarh7.MainActivity" />
+        </activity>
+        <activity
+            android:name="info.danshin.android.polarh7.SessionDetailActivity"
+            android:label="@string/title_session_detail"
+            android:parentActivityName=".SessionListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SessionListActivity" />
+        </activity>
     </application>
+
 </manifest>

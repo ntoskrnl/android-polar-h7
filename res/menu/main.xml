@@ -7,6 +7,11 @@
         android:title="@string/menu_exit"/>
     
     <item android:id="@+id/menu_account_settings" 
-          android:title="@string/account_settings" />
+          android:title="@string/account_settings"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_session_list" 
+          android:title="@string/session_list"
+          android:showAsAction="never" />
 
 </menu>

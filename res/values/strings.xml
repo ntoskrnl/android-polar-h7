@@ -10,5 +10,8 @@
     <string name="status">Status</string>
     <string name="disconnect">Disconnect</string>
     <string name="account_settings">Account Settings</string>
+    <string name="title_session_detail">Session Detail</string>
+    <string name="title_session_list">Sessions</string>
+    <string name="session_list">Heart Rate Sessions...</string>
 
 </resources>

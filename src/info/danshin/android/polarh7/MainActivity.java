@@ -123,16 +123,16 @@ public class MainActivity extends Activity {
 
 				int status = intent.getIntExtra("status", BluetoothGatt.FAILURE);
 				
-				String service = intent.getStringExtra("uuid");// Todo
+				String service = intent.getStringExtra("uuid");
 				Log.d(TAG, "broadcastReceiver.onReceive(): service uuid="+service);
 				if (status == BluetoothGatt.SUCCESS) {
 					Log.d(TAG, "broadcastReceiver.onReceive(): Connected successfully ! Service: "
 							+ service);
-
 					leDisconnected = false;
-
 					leState = CONNECTED;
-					requestLocation();
+					if (sensorLocation == -1) {
+						requestLocation();
+					}
 
 				} else if (status != BluetoothGatt.SUCCESS) {
 					Log.d(TAG, "broadcastReceiver.onReceive(): Connection failed. Service: "
@@ -317,6 +317,9 @@ public class MainActivity extends Activity {
 				return true;
 			case R.id.menu_account_settings:
 				startActivity(new Intent(this, AccountSettingsActivity.class));
+				return true;
+			case R.id.menu_session_list:
+				startActivity(new Intent(this, SessionListActivity.class));
 		}
 		return true;
 	}
@@ -536,7 +539,7 @@ public class MainActivity extends Activity {
 			if(heartBeatsPerMinute > 120) {
 				tvHeartRate.setTextColor(Color.RED);
 			} else {
-				tvHeartRate.setTextColor(Color.BLACK);
+				tvHeartRate.setTextColor(Color.WHITE);
 			}
 		} else {
 			tvHeartRate.setText(String.valueOf(0)+" bpm");

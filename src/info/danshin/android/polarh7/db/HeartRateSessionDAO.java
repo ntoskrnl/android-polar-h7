@@ -1,6 +1,8 @@
 package info.danshin.android.polarh7.db;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -53,7 +55,7 @@ public class HeartRateSessionDAO extends BaseDAO<HeartRateSession> implements He
 		Cursor cursor = getDatabase().query(TABLE_NAME, ALL_COLUMNS, _ID + " = " + id, null, null, null, null);
 		HeartRateSession session = null;
 		if (cursor.moveToFirst()) {
-			session = cursorToHeartRateDataItem(cursor);
+			session = cursorToHeartRateSession(cursor);
 		}
 		cursor.close();
 		return session;
@@ -64,7 +66,16 @@ public class HeartRateSessionDAO extends BaseDAO<HeartRateSession> implements He
 		getDatabase().delete(TABLE_NAME, _ID + " = " + id, null);
 	}
 	
-	private HeartRateSession cursorToHeartRateDataItem(Cursor cursor) {
+	public List<HeartRateSession> getAllSessions() {
+		Cursor cursor = getDatabase().query(TABLE_NAME, ALL_COLUMNS, null, null, null, null, null);
+		List<HeartRateSession> sessions = new ArrayList<HeartRateSession>();
+		while (cursor.moveToNext()) {
+			sessions.add(cursorToHeartRateSession(cursor));
+		}
+		return sessions;
+	}
+	
+	private HeartRateSession cursorToHeartRateSession(Cursor cursor) {
 		HeartRateSession session = new HeartRateSession();
 		session.setId(cursor.getLong(0));
 		if (!cursor.isNull(1)) {

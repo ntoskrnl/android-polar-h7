@@ -26,25 +26,48 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int about=0x7f0a0002;
-        public static final int btn_connect=0x7f0a0009;
-        public static final int btn_disconnect=0x7f0a000a;
-        public static final int device=0x7f0a0008;
-        public static final int device_location=0x7f0a0006;
-        public static final int heart_rate=0x7f0a0007;
-        public static final int menu_account_settings=0x7f0a000d;
-        public static final int menu_exit=0x7f0a000c;
-        public static final int new_devices=0x7f0a0005;
-        public static final int paired_devices=0x7f0a0003;
-        public static final int root_device_list=0x7f0a0000;
-        public static final int status=0x7f0a000b;
-        public static final int title_new_devices=0x7f0a0004;
-        public static final int title_paired_devices=0x7f0a0001;
+        public static final int about=0x7f0a0004;
+        public static final int btn_connect=0x7f0a000d;
+        public static final int btn_disconnect=0x7f0a000e;
+        public static final int device=0x7f0a000b;
+        public static final int device_location=0x7f0a0009;
+        public static final int heart_rate=0x7f0a000a;
+        public static final int menu_account_settings=0x7f0a0010;
+        public static final int menu_exit=0x7f0a000f;
+        public static final int menu_session_list=0x7f0a0011;
+        public static final int new_devices=0x7f0a0007;
+        public static final int paired_devices=0x7f0a0005;
+        public static final int root_device_list=0x7f0a0002;
+        public static final int session_detail_container=0x7f0a0000;
+        public static final int session_detail_layout=0x7f0a0008;
+        public static final int session_list=0x7f0a0001;
+        public static final int status=0x7f0a000c;
+        public static final int title_new_devices=0x7f0a0006;
+        public static final int title_paired_devices=0x7f0a0003;
     }
     public static final class layout {
-        public static final int device_list=0x7f030000;
-        public static final int device_name=0x7f030001;
-        public static final int main=0x7f030002;
+        public static final int activity_session_detail=0x7f030000;
+        /** 
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    
+
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    
+         */
+        public static final int activity_session_list=0x7f030001;
+        public static final int activity_session_twopane=0x7f030002;
+        public static final int device_list=0x7f030003;
+        public static final int device_name=0x7f030004;
+        public static final int fragment_session_detail=0x7f030005;
+        public static final int main=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -58,29 +81,32 @@ public final class R {
         public static final int disconnect=0x7f070007;
         public static final int get_location=0x7f070003;
         public static final int menu_exit=0x7f070005;
-        public static final int pref_default_display_name=0x7f07000e;
-        public static final int pref_description_social_recommendations=0x7f07000c;
+        public static final int pref_default_display_name=0x7f070011;
+        public static final int pref_description_social_recommendations=0x7f07000f;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f070010;
+        public static final int pref_header_data_sync=0x7f070013;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f07000a;
+        public static final int pref_header_general=0x7f07000d;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f070013;
-        public static final int pref_ringtone_silent=0x7f070016;
-        public static final int pref_title_add_friends_to_messages=0x7f07000f;
-        public static final int pref_title_display_name=0x7f07000d;
-        public static final int pref_title_new_message_notifications=0x7f070014;
-        public static final int pref_title_ringtone=0x7f070015;
-        public static final int pref_title_social_recommendations=0x7f07000b;
-        public static final int pref_title_sync_frequency=0x7f070011;
-        public static final int pref_title_system_sync_settings=0x7f070012;
-        public static final int pref_title_vibrate=0x7f070017;
+        public static final int pref_header_notifications=0x7f070016;
+        public static final int pref_ringtone_silent=0x7f070019;
+        public static final int pref_title_add_friends_to_messages=0x7f070012;
+        public static final int pref_title_display_name=0x7f070010;
+        public static final int pref_title_new_message_notifications=0x7f070017;
+        public static final int pref_title_ringtone=0x7f070018;
+        public static final int pref_title_social_recommendations=0x7f07000e;
+        public static final int pref_title_sync_frequency=0x7f070014;
+        public static final int pref_title_system_sync_settings=0x7f070015;
+        public static final int pref_title_vibrate=0x7f07001a;
+        public static final int session_list=0x7f07000b;
         public static final int status=0x7f070006;
-        public static final int title_activity_account_settings=0x7f070009;
+        public static final int title_activity_account_settings=0x7f07000c;
+        public static final int title_session_detail=0x7f070009;
+        public static final int title_session_list=0x7f07000a;
     }
     public static final class style {
         /** 
@@ -92,17 +118,6 @@ public final class R {
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 

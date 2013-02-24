@@ -34,27 +34,6 @@
         android:textSize="36sp"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_connect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/heart_rate"
-        android:layout_below="@+id/heart_rate"
-        android:layout_toRightOf="@+id/device_location"
-        android:enabled="true"
-        android:hint="@string/connect"
-        android:text="@string/connect" />
-
-    <Button
-        android:id="@+id/btn_disconnect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btn_connect"
-        android:layout_below="@+id/btn_connect"
-        android:layout_toRightOf="@+id/device_location"
-        android:enabled="false"
-        android:text="@string/disconnect" />
-
     <TextView
         android:id="@+id/status"
         android:layout_width="wrap_content"
@@ -63,5 +42,27 @@
         android:layout_below="@+id/heart_rate"
         android:text="@string/status"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status"
+        android:layout_alignRight="@+id/heart_rate"
+        android:layout_below="@+id/status"
+        android:layout_marginTop="18dp"
+        android:enabled="true"
+        android:hint="@string/connect"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status"
+        android:layout_alignRight="@+id/btn_connect"
+        android:layout_below="@+id/btn_connect"
+        android:enabled="false"
+        android:text="@string/disconnect" />
 
 </RelativeLayout>
