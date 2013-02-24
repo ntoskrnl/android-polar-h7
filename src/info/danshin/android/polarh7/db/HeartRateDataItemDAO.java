@@ -1,41 +1,73 @@
 package info.danshin.android.polarh7.db;
 
-import info.danshin.android.polarh7.util.HeartRateDataItem;
+import java.util.Date;
+
+import info.danshin.android.polarh7.model.HeartRateDataItem;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 
-public class HeartRateDataItemDAO implements HeartRateDBContract.HeartRateData {
+public class HeartRateDataItemDAO extends BaseDAO<HeartRateDataItem> implements HeartRateDBContract.HeartRateData {
 	
-	private HeartRateDBHelper dbHelper;
-	private SQLiteDatabase database;
+	private static final String[] ALL_COLUMNS = new String[] {
+		_ID, COLUMN_NAME_SESSION_ID, COLUMN_NAME_BPM, COLUMN_NAME_RR_TIME, COLUMN_NAME_TIME_STAMP
+	};
 	
 	public HeartRateDataItemDAO(Context context) {
-		this.dbHelper = new HeartRateDBHelper(context);
+		super(context);
 	}
 	
-	public void open() {
-		this.database = dbHelper.getWritableDatabase();
-	}
-	
-	public void close() {
-		dbHelper.close();
-	}
-	
-	public HeartRateDataItem insertHeartRateDataItem(HeartRateDataItem item) {
+	@Override
+	public HeartRateDataItem insert(HeartRateDataItem item) {
 		ContentValues values = new ContentValues();
-		values.put(COLUMN_NAME_TIME_STAMP, item.getTimeStamp().getTime());
+		values.put(COLUMN_NAME_TIME_STAMP, item.getTimeStamp() == null ? null : item.getTimeStamp().getTime());
 		values.put(COLUMN_NAME_BPM, item.getHeartBeatsPerMinute());
 		values.put(COLUMN_NAME_RR_TIME, (double)item.getRrTime());
-		values.put(COLUMN_NAME_SESSION_ID, (Long) null);
-		long insertId = database.insert(TABLE_NAME, null, values);
-		item.setId(insertId);
+		values.put(COLUMN_NAME_SESSION_ID, item.getSessionId());
+		long insertId = getDatabase().insert(TABLE_NAME, null, values);
+		if (insertId >= 0) {
+			item.setId(insertId);
+			return item;
+		} else return null;
+	}
+	
+	@Override
+	public HeartRateDataItem update(HeartRateDataItem item) {
+		ContentValues values = new ContentValues();
+		values.put(_ID, item.getId());
+		values.put(COLUMN_NAME_TIME_STAMP, item.getTimeStamp() == null ? null : item.getTimeStamp().getTime());
+		values.put(COLUMN_NAME_BPM, item.getHeartBeatsPerMinute());
+		values.put(COLUMN_NAME_RR_TIME, (double)item.getRrTime());
+		values.put(COLUMN_NAME_SESSION_ID, item.getSessionId());	
+		int r = getDatabase().update(TABLE_NAME, values, _ID + " = " + item.getId(), null);
+		return r > 0 ? item : null;
+	}
+	
+	@Override
+	public HeartRateDataItem findById(long id) {
+		Cursor cursor = getDatabase().query(TABLE_NAME, ALL_COLUMNS, _ID + " = " + id, null, null, null, null);
+		HeartRateDataItem item = null;
+		if (cursor.moveToFirst()) {
+			item = cursorToHeartRateDataItem(cursor);
+		}
+		cursor.close();
 		return item;
+	}
+	
+	@Override
+	public void delete(long id) {
+		getDatabase().delete(TABLE_NAME, _ID + " = " + id, null);
 	}
 	
 	private HeartRateDataItem cursorToHeartRateDataItem(Cursor cursor) {
 		HeartRateDataItem item = new HeartRateDataItem();
+		item.setId(cursor.getLong(0));
+		item.setSessionId(cursor.getLong(1));
+		item.setHeartBeatsPerMinute(cursor.getInt(2));
+		item.setRrTime(cursor.getDouble(3));
+		if (!cursor.isNull(4)) {
+			item.setTimeStamp(new Date(cursor.getLong(4)));
+		}
 		return item;
 	}
 }

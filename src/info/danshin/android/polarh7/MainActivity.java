@@ -1,7 +1,7 @@
 package info.danshin.android.polarh7;
 
+import info.danshin.android.polarh7.model.HeartRateDataItem;
 import info.danshin.android.polarh7.util.HeartRateDataHandler;
-import info.danshin.android.polarh7.util.HeartRateDataItem;
 import info.danshin.android.polarh7.util.IMonitors;
 import info.danshin.android.polarh7.util.Tools;
 

@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7.util;
+package info.danshin.android.polarh7.model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -6,9 +6,10 @@ import java.util.Date;
 public class HeartRateDataItem implements Serializable {
 	private static final long serialVersionUID = -6334894776709518038L;
 
-	long id;
+	Long id;
+	Long sessionId;
 	private int heartBeatsPerMinute;
-	private int rrTime;
+	private double rrTime;
 	private Date timeStamp;
 	
 	public HeartRateDataItem() {
@@ -21,30 +22,43 @@ public class HeartRateDataItem implements Serializable {
 		timeStamp = new Date();
 	}
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 	
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
 	public int getHeartBeatsPerMinute() {
 		return heartBeatsPerMinute;
 	}
+	
 	public void setHeartBeatsPerMinute(int heartBeatsPerMinute) {
 		this.heartBeatsPerMinute = heartBeatsPerMinute;
 	}
-	public int getRrTime() {
+	
+	public double getRrTime() {
 		return rrTime;
 	}
-	public void setRrTime(int rrTime) {
+	
+	public void setRrTime(double rrTime) {
 		this.rrTime = rrTime;
 	}
+	
 	public Date getTimeStamp() {
 		return timeStamp;
 	}
+	
 	public void setTimeStamp(Date timeStamp) {
 		this.timeStamp = timeStamp;
+	}
+	
+	public Long getSessionId() {
+		return sessionId;
+	}
+	
+	public void setSessionId(Long sessionId) {
+		this.sessionId = sessionId;
 	}
 }
