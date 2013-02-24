@@ -1,0 +1,112 @@
+com.motorola.bluetoothle.hrm.IBluetoothHrm -> a.a.a.a.a:
+    int connectLe(android.bluetooth.BluetoothDevice,java.lang.String,com.motorola.bluetoothle.hrm.IBluetoothHrmCallback) -> a
+    int disconnectLe(android.bluetooth.BluetoothDevice,java.lang.String) -> a
+    int getLeData(android.bluetooth.BluetoothDevice,java.lang.String,int) -> a
+    int setLeData(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[],int) -> a
+com.motorola.bluetoothle.hrm.IBluetoothHrm$Stub -> a.a.a.a.b:
+    com.motorola.bluetoothle.hrm.IBluetoothHrm asInterface(android.os.IBinder) -> a
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.motorola.bluetoothle.hrm.IBluetoothHrm$Stub$Proxy -> a.a.a.a.c:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    int connectLe(android.bluetooth.BluetoothDevice,java.lang.String,com.motorola.bluetoothle.hrm.IBluetoothHrmCallback) -> a
+    int disconnectLe(android.bluetooth.BluetoothDevice,java.lang.String) -> a
+    int getLeData(android.bluetooth.BluetoothDevice,java.lang.String,int) -> a
+    int setLeData(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[],int) -> a
+com.motorola.bluetoothle.hrm.IBluetoothHrmCallback -> a.a.a.a.d:
+    void indicationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> a
+    void notificationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> b
+com.motorola.bluetoothle.hrm.IBluetoothHrmCallback$Stub -> a.a.a.a.e:
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.motorola.bluetoothle.hrm.IBluetoothHrmCallback$Stub$Proxy -> a.a.a.a.f:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void indicationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> a
+    void notificationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> b
+info.danshin.android.polarh7.MainActivity -> info.danshin.android.polarh7.MainActivity:
+    android.os.ParcelUuid HRM -> d
+    boolean bleSupported -> e
+    boolean leDisconnected -> f
+    int leState -> a
+    com.motorola.bluetoothle.hrm.IBluetoothHrm hrmService -> g
+    java.lang.String hrmUUID -> h
+    android.content.IntentFilter filter_scan -> i
+    int sensorLocation -> j
+    int energyExpended -> k
+    int heartBeatsPerMinute -> l
+    boolean flag_leRcvrReg -> m
+    info.danshin.android.polarh7.MainActivity$callback callback1 -> b
+    android.app.AlertDialog$Builder alert_paired -> n
+    android.widget.ArrayAdapter mPairedDevicesArrayAdapter -> o
+    android.bluetooth.BluetoothDevice device -> p
+    android.bluetooth.BluetoothAdapter bluetoothAdapter -> q
+    android.widget.TextView tvHeartRate -> r
+    android.widget.TextView tvDevice -> s
+    android.widget.TextView tvDeviceLocation -> t
+    android.widget.TextView tvStatus -> u
+    android.widget.Button btGetLocation -> v
+    android.widget.Button btConnect -> w
+    android.widget.Button btDisconnect -> x
+    android.app.AlertDialog alertDialog -> c
+    android.os.Handler mUIUpdateHandler -> y
+    android.content.ServiceConnection mConnection -> z
+    android.content.BroadcastReceiver broadcastReceiver -> A
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onStart() -> onStart
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    java.lang.String getStringSensorLocation(int) -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    short[] getRRIntervals(byte[]) -> a
+    void access$0(info.danshin.android.polarh7.MainActivity) -> a
+    void access$1(info.danshin.android.polarh7.MainActivity,com.motorola.bluetoothle.hrm.IBluetoothHrm) -> a
+    void access$2(info.danshin.android.polarh7.MainActivity,boolean) -> a
+    void access$3(info.danshin.android.polarh7.MainActivity,boolean) -> b
+    android.widget.Button access$4(info.danshin.android.polarh7.MainActivity) -> b
+    android.os.Handler access$5(info.danshin.android.polarh7.MainActivity) -> c
+    com.motorola.bluetoothle.hrm.IBluetoothHrm access$6(info.danshin.android.polarh7.MainActivity) -> d
+    android.bluetooth.BluetoothDevice access$7(info.danshin.android.polarh7.MainActivity) -> e
+    java.lang.String access$8(info.danshin.android.polarh7.MainActivity) -> f
+    void access$9(info.danshin.android.polarh7.MainActivity,android.bluetooth.BluetoothDevice) -> a
+    void access$10(int) -> b
+    int access$11() -> a
+    void access$12(info.danshin.android.polarh7.MainActivity,int,byte[]) -> a
+    boolean access$13(info.danshin.android.polarh7.MainActivity) -> g
+    void access$14(info.danshin.android.polarh7.MainActivity) -> h
+    android.bluetooth.BluetoothAdapter access$15(info.danshin.android.polarh7.MainActivity) -> i
+info.danshin.android.polarh7.MainActivity$1 -> info.danshin.android.polarh7.a:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+info.danshin.android.polarh7.MainActivity$2 -> info.danshin.android.polarh7.b:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+info.danshin.android.polarh7.MainActivity$3 -> info.danshin.android.polarh7.c:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+info.danshin.android.polarh7.MainActivity$4 -> info.danshin.android.polarh7.d:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+info.danshin.android.polarh7.MainActivity$5 -> info.danshin.android.polarh7.e:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+info.danshin.android.polarh7.MainActivity$6 -> info.danshin.android.polarh7.f:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+info.danshin.android.polarh7.MainActivity$7 -> info.danshin.android.polarh7.g:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+info.danshin.android.polarh7.MainActivity$callback -> info.danshin.android.polarh7.h:
+    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void indicationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> a
+    void notificationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> b
+info.danshin.android.polarh7.util.IMonitors -> info.danshin.android.polarh7.a.a:
+    java.lang.String[] MonitorNamesPatternLE -> a
+info.danshin.android.polarh7.util.Tools -> info.danshin.android.polarh7.a.b:
+    boolean isBLESupported() -> a
+    java.lang.String convertToString(short[]) -> a

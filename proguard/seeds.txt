@@ -1,0 +1,2 @@
+info.danshin.android.polarh7.MainActivity
+info.danshin.android.polarh7.MainActivity: MainActivity()

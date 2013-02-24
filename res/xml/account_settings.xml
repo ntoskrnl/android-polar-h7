@@ -1,0 +1,36 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Identity">
+
+        <EditTextPreference
+                android:key="nickname"
+                android:title="Nickname"
+                android:summary="Your short nickname" />  
+        <EditTextPreference
+                android:key="first_name"
+                android:title="First Name"
+                android:summary="Specify your first name" />
+        <EditTextPreference
+                android:key="last_name"
+                android:title="Last Name"
+                android:summary="Specify your last name" />
+        <EditTextPreference android:title="E-mail" android:summary="Specify your E-mail" android:key="email"/>
+        <EditTextPreference android:title="Password" android:summary="Change your password" android:key="password"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Parameters">
+
+        <EditTextPreference
+                android:key="age"
+                android:title="Age"
+                android:summary="Specify your age"
+                android:dialogTitle="Your age" />
+        <ListPreference android:entryValues="@array/listValues" android:entries="@array/listArray" android:summary="Specify your gender" android:title="Gender" android:key="gender"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

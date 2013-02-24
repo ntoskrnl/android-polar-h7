@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Polar H7 for Motorola</string>
+    <string name="device">Device</string>
+    <string name="device_location">Device Location</string>
+    <string name="get_location">Get Location</string>
+    <string name="connect">Connect&#8230;</string>
+    <string name="menu_exit">Exit</string>
+    <string name="status">Status</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="account_settings">Account Settings</string>
+
+</resources>

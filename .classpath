@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="C:/Users/danon/Downloads/adt-bundle-windows-x86_64/sdk/add-ons/Motorola_ICS_R2/libs/BluetoothGattService.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danon/Downloads/adt-bundle-windows-x86_64/sdk/add-ons/Motorola_ICS_R2/libs/BluetoothGatt.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/device_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heart_rate"
+        android:layout_alignBottom="@+id/heart_rate"
+        android:layout_alignLeft="@+id/device"
+        android:text="@string/device_location" />
+
+    <TextView
+        android:id="@+id/device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/device" />
+
+    <TextView
+        android:id="@+id/heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/device"
+        android:layout_marginRight="14dp"
+        android:text="0 bpm"
+        android:textSize="36sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/heart_rate"
+        android:layout_below="@+id/heart_rate"
+        android:layout_toRightOf="@+id/device_location"
+        android:enabled="true"
+        android:hint="@string/connect"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_connect"
+        android:layout_below="@+id/btn_connect"
+        android:layout_toRightOf="@+id/device_location"
+        android:enabled="false"
+        android:text="@string/disconnect" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/device_location"
+        android:layout_below="@+id/heart_rate"
+        android:text="@string/status"
+        android:textStyle="bold" />
+
+</RelativeLayout>
