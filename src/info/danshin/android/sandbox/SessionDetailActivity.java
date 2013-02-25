@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 /**
  * An activity representing a single Session detail screen. This activity is
@@ -39,6 +40,9 @@ public class SessionDetailActivity extends FragmentActivity {
 			Bundle arguments = new Bundle();
 			arguments.putLong(SessionDetailFragment.ARG_SESSION_ID, getIntent()
 					.getLongExtra(SessionDetailFragment.ARG_SESSION_ID, -1L));
+			Toast.makeText(this, "Loading Session #" 
+					+ getIntent().getLongExtra(SessionDetailFragment.ARG_SESSION_ID, -1L), 
+					Toast.LENGTH_SHORT).show();
 			SessionDetailFragment fragment = new SessionDetailFragment();
 			fragment.setArguments(arguments);
 			getSupportFragmentManager().beginTransaction()

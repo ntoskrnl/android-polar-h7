@@ -487,17 +487,12 @@ public class MainActivity extends Activity {
 		Log.d(TAG, "parseData(): length=" + data.length);
 		
 		heartBeatsPerMinute = 0;
-		if (data[1] != 0) {
+		if (data[1] == 0) {
+			heartBeatsPerMinute = (data[0] + 256) % 256;
+		} else if (data[0] < 0) {
 			heartBeatsPerMinute = ((data[0] & 0xFF) << 8) + (data[1] & 0xFF);
-		} else {
-			heartBeatsPerMinute = data[0] & 0xFF;
 		}
-
-		// correct the raw data from LE call back that if>128, it becomes
-		// negative
-		heartBeatsPerMinute = (data[0] < 0) ? (128 + (128 + heartBeatsPerMinute))
-				: (heartBeatsPerMinute);
-
+		
 		energyExpended |= data[2] & 0xFF;
 		energyExpended |= ((data[3] & 0xFF) << 8);
 		

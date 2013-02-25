@@ -17,7 +17,7 @@ public interface HeartRateDBContract {
 		String COLUMN_NAME_BPM = "bpm";
 		String COLUMN_NAME_RR_TIME = "rr_time";
 		String COLUMN_NAME_TIME_STAMP = "time_stamp";
-	}
+	}	
 	
 	public static interface Sessions extends BaseColumns {
 		String TABLE_NAME = "heart_rate_sessions";

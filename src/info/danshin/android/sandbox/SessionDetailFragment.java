@@ -1,5 +1,8 @@
 package info.danshin.android.sandbox;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import info.danshin.android.sandbox.db.HeartRateDataItemDAO;
@@ -51,7 +54,6 @@ public class SessionDetailFragment extends Fragment {
 			// arguments. In a real-world scenario, use a Loader
 			// to load content from a content provider.
 			sessionId = getArguments().getLong(ARG_SESSION_ID, -1L);
-			Toast.makeText(getActivity(), "Session ID = " + sessionId, Toast.LENGTH_SHORT).show();
 		}
 	}
 
@@ -70,6 +72,7 @@ public class SessionDetailFragment extends Fragment {
 		hrDAO.open();
 		List<HeartRateDataItem> items = hrDAO.getAllItemsOfSession(sessionId);
 		if (!items.isEmpty()) {
+			final DateFormat dateFormatter = new SimpleDateFormat("h:mm:ss");
 			GraphViewData[] data = new GraphViewData[items.size()];
 			for (int i = 0; i < data.length; i++) {
 				data[i] = new GraphViewData(items.get(i).getTimeStamp().getTime(), items.get(i).getHeartBeatsPerMinute());
@@ -79,13 +82,31 @@ public class SessionDetailFragment extends Fragment {
 			// TODO Get data from DB for session with sessionId
 			
 	
-			GraphView graphView = new LineGraphView(getActivity(), "Heart Rate Graph: Session #" + sessionId);
+			GraphView graphView = new LineGraphView(getActivity(), "Heart Rate Graph: Session #" + sessionId) {
+				@Override  
+				protected String formatLabel(double value, boolean isValueX) {  
+					if (isValueX) {
+						// convert unix time to human time
+						return dateFormatter.format(new Date((long) value));
+					} else
+						return super.formatLabel(value, isValueX); 
+				}
+				
+				@Override
+				protected double getMaxY() {
+					return super.getMaxY() + 20;
+				}
+				
+				@Override
+				protected double getMinY() {
+					return Math.max(0.0d, super.getMinY()-20);
+				}
+			};
 			graphView.addSeries(series); // data
 			graphView.setScalable(true);
 			graphView.setScrollable(true);
-			graphView.setManualYAxisBounds(160, 40);
 			graphView.setViewPort(data[0].valueX, 60*1000);
-	
+			
 			LinearLayout layout = (LinearLayout) rootView
 					.findViewById(R.id.session_detail_layout);
 			layout.addView(graphView);
