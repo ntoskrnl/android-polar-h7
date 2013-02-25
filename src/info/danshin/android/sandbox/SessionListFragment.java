@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7;
+package info.danshin.android.sandbox;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import info.danshin.android.polarh7.db.HeartRateSessionDAO;
-import info.danshin.android.polarh7.model.HeartRateSession;
+import info.danshin.android.sandbox.db.HeartRateSessionDAO;
+import info.danshin.android.sandbox.model.HeartRateSession;
 
 /**
  * A list fragment representing a list of Sessions. This fragment also supports

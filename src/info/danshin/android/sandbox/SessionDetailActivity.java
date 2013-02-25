@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7;
+package info.danshin.android.sandbox;
 
 import android.content.Intent;
 import android.os.Bundle;

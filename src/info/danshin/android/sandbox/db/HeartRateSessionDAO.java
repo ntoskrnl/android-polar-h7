@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7.db;
+package info.danshin.android.sandbox.db;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,7 +7,7 @@ import java.util.List;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import info.danshin.android.polarh7.model.HeartRateSession;
+import info.danshin.android.sandbox.model.HeartRateSession;
 
 public class HeartRateSessionDAO extends BaseDAO<HeartRateSession> implements HeartRateDBContract.Sessions {
 	

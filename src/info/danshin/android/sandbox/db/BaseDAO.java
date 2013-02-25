@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7.db;
+package info.danshin.android.sandbox.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

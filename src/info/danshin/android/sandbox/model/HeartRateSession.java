@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7.model;
+package info.danshin.android.sandbox.model;
 
 import java.io.Serializable;
 import java.util.Date;

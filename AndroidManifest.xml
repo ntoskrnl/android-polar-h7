@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="info.danshin.android.polarh7"
-    android:versionCode="1"
-    android:versionName="1.0.2" >
+    package="info.danshin.android.sandbox"
+    android:versionCode="2"
+    android:versionName="1.1.0" >
 
     <uses-sdk
         android:minSdkVersion="15"
@@ -10,7 +10,6 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="info.danshin.android.polarh7.MainActivity"
+            android:name="info.danshin.android.sandbox.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="info.danshin.android.polarh7.AccountSettingsActivity"
+            android:name="info.danshin.android.sandbox.AccountSettingsActivity"
             android:label="@string/title_activity_account_settings"
             android:parentActivityName="info.danshin.android.sandbox.MainActivity" >
             <meta-data
@@ -35,15 +34,15 @@
                 android:value="info.danshin.android.sandbox.MainActivity" />
         </activity>
         <activity
-            android:name="info.danshin.android.polarh7.SessionListActivity"
+            android:name="info.danshin.android.sandbox.SessionListActivity"
             android:label="@string/title_session_list"
-            android:parentActivityName="info.danshin.android.polarh7.MainActivity" >
+            android:parentActivityName="info.danshin.android.sandbox.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="info.danshin.android.polarh7.MainActivity" />
+                android:value="info.danshin.android.sandbox.MainActivity" />
         </activity>
         <activity
-            android:name="info.danshin.android.polarh7.SessionDetailActivity"
+            android:name="info.danshin.android.sandbox.SessionDetailActivity"
             android:label="@string/title_session_detail"
             android:parentActivityName=".SessionListActivity" >
             <meta-data

@@ -1,30 +1,591 @@
-com.motorola.bluetoothle.hrm.IBluetoothHrm -> a.a.a.a.a:
+android.support.v4.app.ActivityCompatHoneycomb -> a.a.a.a.a:
+    android.support.v4.app.ActivityCompatHoneycomb next$fe619d5 -> a
+    android.support.v4.app.ActivityCompatHoneycomb prev$fe619d5 -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackRecord -> a.a.a.a.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> l
+    android.support.v4.app.ActivityCompatHoneycomb mHead$fe619d5 -> a
+    android.support.v4.app.ActivityCompatHoneycomb mTail$fe619d5 -> m
+    int mNumOp -> b
+    int mTransition -> c
+    int mTransitionStyle -> d
+    boolean mAddToBackStack -> e
+    java.lang.String mName -> f
+    boolean mCommitted -> n
+    int mIndex -> g
+    int mBreadCrumbTitleRes -> h
+    java.lang.CharSequence mBreadCrumbTitleText -> i
+    int mBreadCrumbShortTitleRes -> j
+    java.lang.CharSequence mBreadCrumbShortTitleText -> k
+    java.lang.String toString() -> toString
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+    void addOp$568ae146(android.support.v4.app.ActivityCompatHoneycomb) -> a
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment) -> a
+    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
+    android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment) -> b
+    void bumpBackStackNesting(int) -> a
+    int commit() -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> a
+android.support.v4.app.BackStackState -> a.a.a.a.c:
+    int[] mOps -> b
+    int mTransition -> c
+    int mTransitionStyle -> d
+    java.lang.String mName -> e
+    int mIndex -> f
+    int mBreadCrumbTitleRes -> g
+    java.lang.CharSequence mBreadCrumbTitleText -> h
+    int mBreadCrumbShortTitleRes -> i
+    java.lang.CharSequence mBreadCrumbShortTitleText -> j
+    android.os.Parcelable$Creator CREATOR -> a
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> a.a.a.a.d:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> a.a.a.a.e:
+    java.util.HashMap sClassMap -> M
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    android.support.v4.app.FragmentManagerImpl mChildFragmentManager -> u
+    android.support.v4.app.Fragment mParentFragment -> v
+    int mFragmentId -> w
+    int mContainerId -> x
+    java.lang.String mTag -> y
+    boolean mHidden -> z
+    boolean mDetached -> A
+    boolean mRetainInstance -> B
+    boolean mRetaining -> C
+    boolean mMenuVisible -> D
+    boolean mCalled -> E
+    int mNextAnim -> F
+    android.view.ViewGroup mContainer -> G
+    android.view.View mView -> H
+    android.view.View mInnerView -> I
+    boolean mDeferStart -> J
+    boolean mUserVisibleHint -> K
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> L
+    boolean mLoadersStarted -> N
+    boolean mCheckedForLoaderManager -> O
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState(android.os.Bundle) -> a
+    void setIndex(int,android.support.v4.app.Fragment) -> a
+    boolean isInBackStack() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    void setArguments(android.os.Bundle) -> b
+    android.os.Bundle getArguments() -> b
+    android.support.v4.app.FragmentActivity getActivity() -> c
+    android.content.res.Resources getResources() -> d
+    void onHiddenChanged$1385ff() -> e
+    void onActivityResult$6eb84b52() -> f
+    android.view.LayoutInflater getLayoutInflater$2ee30c11() -> g
+    void onInflate$423a76cd() -> h
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation$24236ca7() -> i
+    void onCreate(android.os.Bundle) -> c
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onSaveInstanceState(android.os.Bundle) -> d
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> j
+    void initState() -> k
+    void onDetach() -> l
+    void onDestroyOptionsMenu() -> m
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void performCreate(android.os.Bundle) -> e
+    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void performActivityCreated(android.os.Bundle) -> f
+    void performStart() -> n
+    void performResume() -> o
+    void performConfigurationChanged(android.content.res.Configuration) -> a
+    void performLowMemory() -> p
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean performPrepareOptionsMenu(android.view.Menu) -> a
+    boolean performOptionsItemSelected(android.view.MenuItem) -> a
+    boolean performContextItemSelected(android.view.MenuItem) -> b
+    void performOptionsMenuClosed(android.view.Menu) -> b
+    void performSaveInstanceState(android.os.Bundle) -> g
+    void performPause() -> q
+    void performStop() -> r
+    void performReallyStop() -> s
+    void performDestroyView() -> t
+    void performDestroy() -> u
+android.support.v4.app.Fragment$1 -> a.a.a.a.f:
+    android.support.v4.app.Fragment this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.Fragment$InstantiationException -> a.a.a.a.g:
+android.support.v4.app.FragmentActivity -> a.a.a.a.h:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    android.support.v4.app.FragmentContainer mContainer -> e
+    boolean mCreated -> f
+    boolean mResumed -> g
+    boolean mStopped -> c
+    boolean mReallyStopped -> h
+    boolean mRetaining -> d
+    boolean mOptionsMenuInvalidated -> i
+    boolean mCheckedForLoaderManager -> j
+    boolean mLoadersStarted -> k
+    java.util.HashMap mAllLoaderManagers -> l
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> m
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void supportInvalidateOptionsMenu() -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    java.lang.String viewToString(android.view.View) -> a
+    void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
+    void doReallyStop(boolean) -> a
+    void onAttachFragment$65850823() -> c
+    android.support.v4.app.FragmentManager getSupportFragmentManager() -> d
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragment(java.lang.String) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(java.lang.String,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$1 -> a.a.a.a.i:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.app.FragmentActivity$2 -> a.a.a.a.j:
+    android.support.v4.app.FragmentActivity this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> a.a.a.a.k:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> a.a.a.a.l:
+    java.util.ArrayList fragments -> a
+    java.util.HashMap loaders -> b
+android.support.v4.app.FragmentContainer -> a.a.a.a.m:
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentManager -> a.a.a.a.n:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+android.support.v4.app.FragmentManager$OnBackStackChangedListener -> a.a.a.a.o:
+android.support.v4.app.FragmentManagerImpl -> a.a.a.a.p:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> f
+    java.util.ArrayList mPendingActions -> g
+    java.lang.Runnable[] mTmpActions -> h
+    boolean mExecutingActions -> i
+    java.util.ArrayList mActive -> b
+    java.util.ArrayList mAdded -> c
+    java.util.ArrayList mAvailIndices -> j
+    java.util.ArrayList mBackStack -> k
+    java.util.ArrayList mCreatedMenus -> l
+    java.util.ArrayList mBackStackIndices -> m
+    java.util.ArrayList mAvailBackStackIndices -> n
+    int mCurState -> d
+    android.support.v4.app.FragmentActivity mActivity -> o
+    android.support.v4.app.FragmentContainer mContainer -> p
+    android.support.v4.app.Fragment mParent -> q
+    boolean mNeedMenuInvalidate -> r
+    boolean mStateSaved -> s
+    boolean mDestroyed -> t
+    java.lang.String mNoTransactionsBecause -> e
+    boolean mHavePendingDeferredStart -> u
+    android.os.Bundle mStateBundle -> v
+    android.util.SparseArray mStateArray -> w
+    java.lang.Runnable mExecCommit -> x
+    android.view.animation.Interpolator DECELERATE_QUINT -> y
+    android.view.animation.Interpolator DECELERATE_CUBIC -> z
+    void throwException(java.lang.RuntimeException) -> a
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean popBackStackImmediate() -> b
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation$376f30fd(float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation$424ea1bd(float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> a
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> q
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> r
+    void enqueueAction(java.lang.Runnable,boolean) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> c
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    java.util.ArrayList retainNonConfig() -> d
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> b
+    android.os.Parcelable saveAllState() -> e
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
+    void noteStateNotSaved() -> f
+    void dispatchCreate() -> g
+    void dispatchActivityCreated() -> h
+    void dispatchStart() -> i
+    void dispatchResume() -> j
+    void dispatchPause() -> k
+    void dispatchStop() -> l
+    void dispatchReallyStop() -> m
+    void dispatchDestroyView() -> n
+    void dispatchDestroy() -> o
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> p
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+android.support.v4.app.FragmentManagerImpl$1 -> a.a.a.a.q:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> a.a.a.a.r:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> a.a.a.a.s:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> a.a.a.a.t:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> a.a.a.a.u:
+    java.lang.String mClassName -> d
+    int mIndex -> e
+    boolean mFromLayout -> f
+    int mFragmentId -> g
+    int mContainerId -> h
+    java.lang.String mTag -> i
+    boolean mRetainInstance -> j
+    boolean mDetached -> k
+    android.os.Bundle mArguments -> l
+    android.os.Bundle mSavedFragmentState -> a
+    android.support.v4.app.Fragment mInstance -> b
+    android.os.Parcelable$Creator CREATOR -> c
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> a.a.a.a.v:
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTransaction -> a.a.a.a.w:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment) -> b
+    int commit() -> a
+android.support.v4.app.ListFragment -> a.a.a.a.x:
+    android.os.Handler mHandler -> N
+    java.lang.Runnable mRequestFocus -> O
+    android.widget.AdapterView$OnItemClickListener mOnClickListener -> P
+    android.widget.ListAdapter mAdapter -> Q
+    android.widget.ListView mList -> M
+    android.view.View mEmptyView -> R
+    android.widget.TextView mStandardEmptyView -> S
+    android.view.View mProgressContainer -> T
+    android.view.View mListContainer -> U
+    boolean mListShown -> V
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onDestroyView() -> j
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> a
+    void setListAdapter(android.widget.ListAdapter) -> a
+    android.widget.ListView getListView() -> v
+    void setListShown(boolean,boolean) -> a
+    void ensureList() -> w
+android.support.v4.app.ListFragment$1 -> a.a.a.a.y:
+    android.support.v4.app.ListFragment this$0 -> a
+    void run() -> run
+android.support.v4.app.ListFragment$2 -> a.a.a.a.z:
+    android.support.v4.app.ListFragment this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+android.support.v4.app.LoaderManager -> a.a.a.a.A:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl -> a.a.a.a.B:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> f
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> g
+    java.lang.String mWho -> b
+    android.support.v4.app.FragmentActivity mActivity -> c
+    boolean mStarted -> d
+    boolean mRetaining -> e
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> a.a.a.a.C:
+    int mId -> a
+    android.os.Bundle mArgs -> j
+    android.support.v4.app.FragmentManager$OnBackStackChangedListener mCallbacks$641e715d -> b
+    android.support.v4.content.Loader mLoader -> c
+    boolean mHaveData -> k
+    boolean mDeliveredData -> d
+    java.lang.Object mData -> l
+    boolean mStarted -> e
+    boolean mRetaining -> f
+    boolean mRetainingStarted -> g
+    boolean mReportNextStart -> h
+    boolean mDestroyed -> m
+    boolean mListenerRegistered -> i
+    void stop() -> a
+    void destroy() -> b
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NavUtils -> a.a.a.a.D:
+    android.support.v4.app.NavUtils$NavUtilsImpl IMPL -> a
+    void navigateUpFromSameTask(android.app.Activity) -> a
+    void navigateUpTo(android.app.Activity,android.content.Intent) -> a
+    java.lang.String getParentActivityName(android.app.Activity) -> b
+    java.lang.String getParentActivityName(android.content.Context,android.content.ComponentName) -> a
+android.support.v4.app.NavUtils$NavUtilsImpl -> a.a.a.a.E:
+    android.content.Intent getParentActivityIntent(android.app.Activity) -> a
+    void navigateUpTo(android.app.Activity,android.content.Intent) -> a
+    java.lang.String getParentActivityName(android.content.Context,android.content.pm.ActivityInfo) -> a
+android.support.v4.app.NavUtils$NavUtilsImplJB -> a.a.a.a.F:
+    android.content.Intent getParentActivityIntent(android.app.Activity) -> a
+    void navigateUpTo(android.app.Activity,android.content.Intent) -> a
+    java.lang.String getParentActivityName(android.content.Context,android.content.pm.ActivityInfo) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> a.a.a.a.G:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> a.a.a.a.H:
+android.support.v4.content.IntentCompat -> a.a.a.b.a:
+    android.support.v4.content.IntentCompat$IntentCompatImpl IMPL -> a
+    android.content.Intent makeMainActivity(android.content.ComponentName) -> a
+android.support.v4.content.IntentCompat$IntentCompatImpl -> a.a.a.b.b:
+    android.content.Intent makeMainActivity(android.content.ComponentName) -> a
+android.support.v4.content.IntentCompat$IntentCompatImplHC -> a.a.a.b.c:
+    android.content.Intent makeMainActivity(android.content.ComponentName) -> a
+android.support.v4.content.IntentCompat$IntentCompatImplIcsMr1 -> a.a.a.b.d:
+android.support.v4.content.Loader -> a.a.a.b.e:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void stopLoading() -> b
+    void reset() -> c
+    java.lang.String toString() -> toString
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> a.a.a.b.f:
+android.support.v4.util.DebugUtils -> a.a.a.c.a:
+    double valueX -> a
+    double valueY -> b
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+    boolean isBLESupported() -> a
+    java.lang.String convertToString(short[]) -> a
+android.support.v4.util.LogWriter -> a.a.a.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> a.a.a.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    int size() -> a
+    int keyAt(int) -> a
+    java.lang.Object valueAt(int) -> b
+    void clear() -> b
+com.jjoe64.graphview.GraphView -> b.a.a.a:
+    android.graphics.Paint paint -> a
+    java.lang.String[] horlabels -> b
+    java.lang.String[] verlabels -> c
+    java.lang.String title -> d
+    boolean scrollable -> e
+    double viewportStart -> f
+    double viewportSize -> g
+    android.view.View viewVerLabels -> h
+    com.jjoe64.graphview.compatible.ScaleGestureDetector scaleDetector -> i
+    boolean scalable -> j
+    java.text.NumberFormat numberformatter -> k
+    java.util.List graphSeries -> l
+    boolean showLegend -> m
+    float legendWidth -> n
+    com.jjoe64.graphview.GraphView$LegendAlign legendAlign -> o
+    boolean manualYAxis -> p
+    double manualMaxYValue -> q
+    double manualMinYValue -> r
+    int[] $SWITCH_TABLE$com$jjoe64$graphview$GraphView$LegendAlign -> s
+    android.support.v4.util.DebugUtils[] _values$7c61c6bf(int) -> a
+    void addSeries(com.jjoe64.graphview.GraphViewSeries) -> a
+    void drawLegend(android.graphics.Canvas,float,float) -> a
+    void drawSeries$7217b6af(android.graphics.Canvas,android.support.v4.util.DebugUtils[],float,float,float,double,double,double,double,float) -> a
+    java.lang.String formatLabel$ef14f75(double) -> a
+    java.lang.String[] generateVerlabels(float) -> a
+    double getMaxX(boolean) -> a
+    double getMaxY() -> a
+    double getMinX(boolean) -> b
+    double getMinY() -> b
+    boolean isScrollable() -> c
+    void setManualYAxisBounds(double,double) -> a
+    void setScalable(boolean) -> c
+    void setScrollable(boolean) -> d
+    void setViewPort(double,double) -> b
+    java.lang.String[] access$0(com.jjoe64.graphview.GraphView) -> a
+    java.lang.String[] access$1(com.jjoe64.graphview.GraphView,float) -> a
+    void access$2(com.jjoe64.graphview.GraphView,java.lang.String[]) -> a
+    java.lang.String[] access$3(com.jjoe64.graphview.GraphView) -> b
+    java.lang.String[] access$4(com.jjoe64.graphview.GraphView,float) -> b
+    void access$5(com.jjoe64.graphview.GraphView,java.lang.String[]) -> b
+    java.lang.String access$6(com.jjoe64.graphview.GraphView) -> c
+    java.util.List access$7(com.jjoe64.graphview.GraphView) -> d
+    android.support.v4.util.DebugUtils[] access$8$78e89066(com.jjoe64.graphview.GraphView,int) -> a
+    boolean access$9(com.jjoe64.graphview.GraphView) -> e
+    double access$10(com.jjoe64.graphview.GraphView) -> f
+    double access$11(com.jjoe64.graphview.GraphView) -> g
+    void access$12(com.jjoe64.graphview.GraphView,double) -> a
+    android.view.View access$13(com.jjoe64.graphview.GraphView) -> h
+    boolean access$14(com.jjoe64.graphview.GraphView) -> i
+    com.jjoe64.graphview.compatible.ScaleGestureDetector access$15(com.jjoe64.graphview.GraphView) -> j
+    int[] $SWITCH_TABLE$com$jjoe64$graphview$GraphView$LegendAlign() -> d
+com.jjoe64.graphview.GraphView$1 -> b.a.a.b:
+com.jjoe64.graphview.GraphView$GraphViewContentView -> b.a.a.c:
+    float lastTouchEventX -> a
+    float graphwidth -> b
+    com.jjoe64.graphview.GraphView this$0 -> c
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.jjoe64.graphview.GraphView$LegendAlign -> b.a.a.d:
+    com.jjoe64.graphview.GraphView$LegendAlign TOP -> a
+    com.jjoe64.graphview.GraphView$LegendAlign MIDDLE -> b
+    com.jjoe64.graphview.GraphView$LegendAlign BOTTOM -> c
+    com.jjoe64.graphview.GraphView$LegendAlign[] ENUM$VALUES -> d
+    com.jjoe64.graphview.GraphView$LegendAlign[] values() -> a
+com.jjoe64.graphview.GraphView$VerLabelsView -> b.a.a.e:
+    com.jjoe64.graphview.GraphView this$0 -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.jjoe64.graphview.GraphViewSeries -> b.a.a.f:
+    java.lang.String description -> a
+    com.jjoe64.graphview.GraphViewSeries$GraphViewStyle style -> b
+    android.support.v4.util.DebugUtils[] values$65d10519 -> c
+    java.util.List graphViews -> d
+    void addGraphView(com.jjoe64.graphview.GraphView) -> a
+com.jjoe64.graphview.GraphViewSeries$GraphViewStyle -> b.a.a.g:
+    int color -> a
+    int thickness -> b
+com.jjoe64.graphview.LineGraphView -> b.a.a.h:
+    android.graphics.Paint paintBackground -> b
+    void drawSeries$7217b6af(android.graphics.Canvas,android.support.v4.util.DebugUtils[],float,float,float,double,double,double,double,float) -> a
+com.jjoe64.graphview.compatible.RealScaleGestureDetector -> b.a.a.a.a:
+com.jjoe64.graphview.compatible.ScaleGestureDetector -> b.a.a.a.b:
+    java.lang.Object realScaleGestureDetector -> a
+    java.lang.reflect.Method method_getScaleFactor -> b
+    java.lang.reflect.Method method_isInProgress -> c
+    java.lang.reflect.Method method_onTouchEvent -> d
+    boolean isInProgress() -> a
+    void onTouchEvent(android.view.MotionEvent) -> a
+com.jjoe64.graphview.compatible.ScaleGestureDetector$SimpleOnScaleGestureListener -> b.a.a.a.c:
+com.motorola.bluetoothle.hrm.IBluetoothHrm -> b.b.a.a.a:
     int connectLe(android.bluetooth.BluetoothDevice,java.lang.String,com.motorola.bluetoothle.hrm.IBluetoothHrmCallback) -> a
     int disconnectLe(android.bluetooth.BluetoothDevice,java.lang.String) -> a
     int getLeData(android.bluetooth.BluetoothDevice,java.lang.String,int) -> a
     int setLeData(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[],int) -> a
-com.motorola.bluetoothle.hrm.IBluetoothHrm$Stub -> a.a.a.a.b:
+com.motorola.bluetoothle.hrm.IBluetoothHrm$Stub -> b.b.a.a.b:
     com.motorola.bluetoothle.hrm.IBluetoothHrm asInterface(android.os.IBinder) -> a
     boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
-com.motorola.bluetoothle.hrm.IBluetoothHrm$Stub$Proxy -> a.a.a.a.c:
+com.motorola.bluetoothle.hrm.IBluetoothHrm$Stub$Proxy -> b.b.a.a.c:
     android.os.IBinder mRemote -> a
     android.os.IBinder asBinder() -> asBinder
     int connectLe(android.bluetooth.BluetoothDevice,java.lang.String,com.motorola.bluetoothle.hrm.IBluetoothHrmCallback) -> a
     int disconnectLe(android.bluetooth.BluetoothDevice,java.lang.String) -> a
     int getLeData(android.bluetooth.BluetoothDevice,java.lang.String,int) -> a
     int setLeData(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[],int) -> a
-com.motorola.bluetoothle.hrm.IBluetoothHrmCallback -> a.a.a.a.d:
+com.motorola.bluetoothle.hrm.IBluetoothHrmCallback -> b.b.a.a.d:
     void indicationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> a
     void notificationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> b
-com.motorola.bluetoothle.hrm.IBluetoothHrmCallback$Stub -> a.a.a.a.e:
+com.motorola.bluetoothle.hrm.IBluetoothHrmCallback$Stub -> b.b.a.a.e:
     android.os.IBinder asBinder() -> asBinder
     boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
-com.motorola.bluetoothle.hrm.IBluetoothHrmCallback$Stub$Proxy -> a.a.a.a.f:
+com.motorola.bluetoothle.hrm.IBluetoothHrmCallback$Stub$Proxy -> b.b.a.a.f:
     android.os.IBinder mRemote -> a
     android.os.IBinder asBinder() -> asBinder
     void indicationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> a
     void notificationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> b
-info.danshin.android.polarh7.MainActivity -> info.danshin.android.polarh7.MainActivity:
+info.danshin.android.sandbox.AccountSettingsActivity -> info.danshin.android.sandbox.AccountSettingsActivity:
+    info.danshin.android.sandbox.AccountSettingsFragment fragment -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+info.danshin.android.sandbox.AccountSettingsFragment -> info.danshin.android.sandbox.a:
+    android.preference.EditTextPreference mEmailPref -> a
+    android.preference.EditTextPreference mFirstNamePref -> b
+    android.preference.EditTextPreference mLastNamePref -> c
+    android.preference.EditTextPreference mNicknamePref -> d
+    android.preference.ListPreference mGenderPref -> e
+    android.preference.EditTextPreference mAgePref -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void updatePrefSummary(android.preference.Preference) -> a
+    void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+info.danshin.android.sandbox.MainActivity -> info.danshin.android.sandbox.MainActivity:
     android.os.ParcelUuid HRM -> d
     boolean bleSupported -> e
     boolean leDisconnected -> f
@@ -32,26 +593,28 @@ info.danshin.android.polarh7.MainActivity -> info.danshin.android.polarh7.MainAc
     com.motorola.bluetoothle.hrm.IBluetoothHrm hrmService -> g
     java.lang.String hrmUUID -> h
     android.content.IntentFilter filter_scan -> i
-    int sensorLocation -> j
-    int energyExpended -> k
-    int heartBeatsPerMinute -> l
-    boolean flag_leRcvrReg -> m
-    info.danshin.android.polarh7.MainActivity$callback callback1 -> b
-    android.app.AlertDialog$Builder alert_paired -> n
-    android.widget.ArrayAdapter mPairedDevicesArrayAdapter -> o
-    android.bluetooth.BluetoothDevice device -> p
-    android.bluetooth.BluetoothAdapter bluetoothAdapter -> q
-    android.widget.TextView tvHeartRate -> r
-    android.widget.TextView tvDevice -> s
-    android.widget.TextView tvDeviceLocation -> t
-    android.widget.TextView tvStatus -> u
-    android.widget.Button btGetLocation -> v
+    android.content.Context context -> j
+    int sensorLocation -> k
+    int energyExpended -> l
+    int heartBeatsPerMinute -> m
+    boolean flag_leRcvrReg -> n
+    info.danshin.android.sandbox.MainActivity$callback callback1 -> b
+    android.app.AlertDialog$Builder alert_paired -> o
+    android.widget.ArrayAdapter mPairedDevicesArrayAdapter -> p
+    android.bluetooth.BluetoothDevice device -> q
+    android.bluetooth.BluetoothAdapter bluetoothAdapter -> r
+    android.widget.TextView tvHeartRate -> s
+    android.widget.TextView tvDevice -> t
+    android.widget.TextView tvDeviceLocation -> u
+    android.widget.TextView tvStatus -> v
     android.widget.Button btConnect -> w
     android.widget.Button btDisconnect -> x
     android.app.AlertDialog alertDialog -> c
-    android.os.Handler mUIUpdateHandler -> y
-    android.content.ServiceConnection mConnection -> z
-    android.content.BroadcastReceiver broadcastReceiver -> A
+    java.util.concurrent.BlockingQueue heartRateDataQueue -> y
+    java.lang.Thread heartRateDataHandler -> z
+    android.os.Handler mUIUpdateHandler -> A
+    android.content.ServiceConnection mConnection -> B
+    android.content.BroadcastReceiver broadcastReceiver -> C
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
@@ -60,53 +623,150 @@ info.danshin.android.polarh7.MainActivity -> info.danshin.android.polarh7.MainAc
     void onPause() -> onPause
     void onStop() -> onStop
     void onDestroy() -> onDestroy
+    void requestLocation() -> a
     java.lang.String getStringSensorLocation(int) -> a
     void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void saveHeartRateData$3b45aa13(int,short[]) -> a
     short[] getRRIntervals(byte[]) -> a
-    void access$0(info.danshin.android.polarh7.MainActivity) -> a
-    void access$1(info.danshin.android.polarh7.MainActivity,com.motorola.bluetoothle.hrm.IBluetoothHrm) -> a
-    void access$2(info.danshin.android.polarh7.MainActivity,boolean) -> a
-    void access$3(info.danshin.android.polarh7.MainActivity,boolean) -> b
-    android.widget.Button access$4(info.danshin.android.polarh7.MainActivity) -> b
-    android.os.Handler access$5(info.danshin.android.polarh7.MainActivity) -> c
-    com.motorola.bluetoothle.hrm.IBluetoothHrm access$6(info.danshin.android.polarh7.MainActivity) -> d
-    android.bluetooth.BluetoothDevice access$7(info.danshin.android.polarh7.MainActivity) -> e
-    java.lang.String access$8(info.danshin.android.polarh7.MainActivity) -> f
-    void access$9(info.danshin.android.polarh7.MainActivity,android.bluetooth.BluetoothDevice) -> a
+    void access$0(info.danshin.android.sandbox.MainActivity) -> a
+    void access$1(info.danshin.android.sandbox.MainActivity,com.motorola.bluetoothle.hrm.IBluetoothHrm) -> a
+    void access$2(info.danshin.android.sandbox.MainActivity,boolean) -> a
+    void access$3(info.danshin.android.sandbox.MainActivity,boolean) -> b
+    int access$4() -> b
+    android.os.Handler access$5(info.danshin.android.sandbox.MainActivity) -> b
+    com.motorola.bluetoothle.hrm.IBluetoothHrm access$6(info.danshin.android.sandbox.MainActivity) -> c
+    android.bluetooth.BluetoothDevice access$7(info.danshin.android.sandbox.MainActivity) -> d
+    java.lang.String access$8(info.danshin.android.sandbox.MainActivity) -> e
+    void access$9(info.danshin.android.sandbox.MainActivity,android.bluetooth.BluetoothDevice) -> a
     void access$10(int) -> b
-    int access$11() -> a
-    void access$12(info.danshin.android.polarh7.MainActivity,int,byte[]) -> a
-    boolean access$13(info.danshin.android.polarh7.MainActivity) -> g
-    void access$14(info.danshin.android.polarh7.MainActivity) -> h
-    android.bluetooth.BluetoothAdapter access$15(info.danshin.android.polarh7.MainActivity) -> i
-info.danshin.android.polarh7.MainActivity$1 -> info.danshin.android.polarh7.a:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+    void access$11(info.danshin.android.sandbox.MainActivity,int,byte[]) -> a
+    boolean access$12(info.danshin.android.sandbox.MainActivity) -> f
+    void access$13(info.danshin.android.sandbox.MainActivity) -> g
+    android.bluetooth.BluetoothAdapter access$14(info.danshin.android.sandbox.MainActivity) -> h
+info.danshin.android.sandbox.MainActivity$1 -> info.danshin.android.sandbox.b:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void handleMessage(android.os.Message) -> handleMessage
-info.danshin.android.polarh7.MainActivity$2 -> info.danshin.android.polarh7.b:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+info.danshin.android.sandbox.MainActivity$2 -> info.danshin.android.sandbox.c:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
     void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
-info.danshin.android.polarh7.MainActivity$3 -> info.danshin.android.polarh7.c:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+info.danshin.android.sandbox.MainActivity$3 -> info.danshin.android.sandbox.d:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-info.danshin.android.polarh7.MainActivity$4 -> info.danshin.android.polarh7.d:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+info.danshin.android.sandbox.MainActivity$4 -> info.danshin.android.sandbox.e:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-info.danshin.android.polarh7.MainActivity$5 -> info.danshin.android.polarh7.e:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+info.danshin.android.sandbox.MainActivity$5 -> info.danshin.android.sandbox.f:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-info.danshin.android.polarh7.MainActivity$6 -> info.danshin.android.polarh7.f:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-info.danshin.android.polarh7.MainActivity$7 -> info.danshin.android.polarh7.g:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+info.danshin.android.sandbox.MainActivity$6 -> info.danshin.android.sandbox.g:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-info.danshin.android.polarh7.MainActivity$callback -> info.danshin.android.polarh7.h:
-    info.danshin.android.polarh7.MainActivity this$0 -> a
+info.danshin.android.sandbox.MainActivity$callback -> info.danshin.android.sandbox.h:
+    info.danshin.android.sandbox.MainActivity this$0 -> a
     void indicationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> a
     void notificationLeCb(android.bluetooth.BluetoothDevice,java.lang.String,int,byte[]) -> b
-info.danshin.android.polarh7.util.IMonitors -> info.danshin.android.polarh7.a.a:
+info.danshin.android.sandbox.SessionDetailActivity -> info.danshin.android.sandbox.SessionDetailActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+info.danshin.android.sandbox.SessionDetailFragment -> info.danshin.android.sandbox.i:
+    java.lang.Long sessionId -> M
+    com.jjoe64.graphview.GraphViewSeries series -> N
+    info.danshin.android.sandbox.db.HeartRateDataItemDAO hrDAO -> O
+    void onCreate(android.os.Bundle) -> c
+    android.view.View onCreateView$469ccb8a(android.view.LayoutInflater,android.view.ViewGroup) -> a
+info.danshin.android.sandbox.SessionListActivity -> info.danshin.android.sandbox.SessionListActivity:
+    boolean mTwoPane -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onItemSelected(java.lang.Long) -> a
+info.danshin.android.sandbox.SessionListFragment -> info.danshin.android.sandbox.SessionListFragment:
+    info.danshin.android.sandbox.SessionListFragment$Callbacks mCallbacks -> N
+    int mActivatedPosition -> O
+    info.danshin.android.sandbox.SessionListFragment$Callbacks sDummyCallbacks -> P
+    java.util.List sessionsList -> Q
+    void onCreate(android.os.Bundle) -> c
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onAttach(android.app.Activity) -> a
+    void onDetach() -> l
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> a
+    void onSaveInstanceState(android.os.Bundle) -> d
+    void setActivateOnItemClick(boolean) -> a
+info.danshin.android.sandbox.SessionListFragment$1 -> info.danshin.android.sandbox.j:
+    void onItemSelected(java.lang.Long) -> a
+info.danshin.android.sandbox.SessionListFragment$Callbacks -> info.danshin.android.sandbox.k:
+    void onItemSelected(java.lang.Long) -> a
+info.danshin.android.sandbox.db.BaseDAO -> info.danshin.android.sandbox.a.a:
+    android.database.sqlite.SQLiteOpenHelper dbHelper -> a
+    android.database.sqlite.SQLiteDatabase database -> b
+    void open() -> a
+    void close() -> b
+    android.database.sqlite.SQLiteDatabase getDatabase() -> c
+info.danshin.android.sandbox.db.HeartRateDBContract$HeartRateData -> info.danshin.android.sandbox.a.b:
+info.danshin.android.sandbox.db.HeartRateDBHelper -> info.danshin.android.sandbox.a.c:
+    info.danshin.android.sandbox.db.HeartRateDBHelper getInstance(android.content.Context) -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    void onDowngrade(android.database.sqlite.SQLiteDatabase,int,int) -> onDowngrade
+info.danshin.android.sandbox.db.HeartRateDBHelper$HOLDER -> info.danshin.android.sandbox.a.d:
+    info.danshin.android.sandbox.db.HeartRateDBHelper instance -> a
+    info.danshin.android.sandbox.db.HeartRateDBHelper access$0() -> a
+    void access$1(info.danshin.android.sandbox.db.HeartRateDBHelper) -> a
+info.danshin.android.sandbox.db.HeartRateDataItemDAO -> info.danshin.android.sandbox.a.e:
+    java.lang.String[] ALL_COLUMNS -> a
+    info.danshin.android.sandbox.model.HeartRateDataItem insert(info.danshin.android.sandbox.model.HeartRateDataItem) -> a
+    java.util.List getAllItemsOfSession(java.lang.Long) -> a
+info.danshin.android.sandbox.db.HeartRateSessionDAO -> info.danshin.android.sandbox.a.f:
+    java.lang.String[] ALL_COLUMNS -> a
+    info.danshin.android.sandbox.model.HeartRateSession insert(info.danshin.android.sandbox.model.HeartRateSession) -> a
+    info.danshin.android.sandbox.model.HeartRateSession update(info.danshin.android.sandbox.model.HeartRateSession) -> b
+    java.util.List getAllSessions() -> d
+info.danshin.android.sandbox.model.HeartRateDataItem -> info.danshin.android.sandbox.b.a:
+    java.lang.Long id -> a
+    java.lang.Long sessionId -> b
+    int heartBeatsPerMinute -> c
+    double rrTime -> d
+    java.util.Date timeStamp -> e
+    java.lang.Long getId() -> a
+    void setId(java.lang.Long) -> a
+    int getHeartBeatsPerMinute() -> b
+    void setHeartBeatsPerMinute(int) -> a
+    double getRrTime() -> c
+    void setRrTime(double) -> a
+    java.util.Date getTimeStamp() -> d
+    void setTimeStamp(java.util.Date) -> a
+    java.lang.Long getSessionId() -> e
+    void setSessionId(java.lang.Long) -> b
+info.danshin.android.sandbox.model.HeartRateSession -> info.danshin.android.sandbox.b.b:
+    java.lang.Long id -> a
+    java.lang.Long userId -> b
+    java.lang.String name -> c
+    java.lang.String description -> d
+    long status -> e
+    java.util.Date dateStarted -> f
+    java.util.Date dateEnded -> g
+    java.lang.Long getId() -> a
+    void setId(java.lang.Long) -> a
+    java.lang.Long getUserId() -> b
+    void setUserId(java.lang.Long) -> b
+    java.lang.String getName() -> c
+    void setName(java.lang.String) -> a
+    java.lang.String getDescription() -> d
+    void setDescription(java.lang.String) -> b
+    long getStatus() -> e
+    void setStatus(long) -> a
+    java.util.Date getDateStarted() -> f
+    void setDateStarted(java.util.Date) -> a
+    java.util.Date getDateEnded() -> g
+    void setDateEnded(java.util.Date) -> b
+    java.lang.String toString() -> toString
+info.danshin.android.sandbox.util.HeartRateDataHandler -> info.danshin.android.sandbox.c.a:
+    java.util.concurrent.BlockingQueue heartRateDataQueue -> a
+    info.danshin.android.sandbox.db.HeartRateDataItemDAO hrDAO -> b
+    info.danshin.android.sandbox.db.HeartRateSessionDAO sessionDAO -> c
+    long lastTimeStamp -> d
+    info.danshin.android.sandbox.model.HeartRateSession currentSession -> e
+    void run() -> run
+    void closeSession() -> a
+info.danshin.android.sandbox.util.IMonitors -> info.danshin.android.sandbox.c.b:
     java.lang.String[] MonitorNamesPatternLE -> a
-info.danshin.android.polarh7.util.Tools -> info.danshin.android.polarh7.a.b:
-    boolean isBLESupported() -> a
-    java.lang.String convertToString(short[]) -> a

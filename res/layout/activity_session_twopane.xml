@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/session_list"
-        android:name="info.danshin.android.polarh7.SessionListFragment"
+        android:name="info.danshin.android.sandbox.SessionListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"

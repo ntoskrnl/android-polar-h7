@@ -1,9 +1,9 @@
-package info.danshin.android.polarh7;
+package info.danshin.android.sandbox;
 
 import java.util.List;
 
-import info.danshin.android.polarh7.db.HeartRateDataItemDAO;
-import info.danshin.android.polarh7.model.HeartRateDataItem;
+import info.danshin.android.sandbox.db.HeartRateDataItemDAO;
+import info.danshin.android.sandbox.model.HeartRateDataItem;
 
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphViewSeries;

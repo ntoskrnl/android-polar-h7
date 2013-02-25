@@ -1,4 +1,4 @@
-package info.danshin.android.polarh7.util;
+package info.danshin.android.sandbox.util;
 
 public class Tools {
 	public static boolean isBLESupported() {

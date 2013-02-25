@@ -1,9 +1,9 @@
-package info.danshin.android.polarh7;
+package info.danshin.android.sandbox;
 
-import info.danshin.android.polarh7.model.HeartRateDataItem;
-import info.danshin.android.polarh7.util.HeartRateDataHandler;
-import info.danshin.android.polarh7.util.IMonitors;
-import info.danshin.android.polarh7.util.Tools;
+import info.danshin.android.sandbox.model.HeartRateDataItem;
+import info.danshin.android.sandbox.util.HeartRateDataHandler;
+import info.danshin.android.sandbox.util.IMonitors;
+import info.danshin.android.sandbox.util.Tools;
 
 import java.util.Set;
 import java.util.concurrent.BlockingQueue;

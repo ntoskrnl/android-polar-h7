@@ -1,11 +1,10 @@
-package info.danshin.android.polarh7.db;
+package info.danshin.android.sandbox.db;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import info.danshin.android.polarh7.model.HeartRateDataItem;
-import info.danshin.android.polarh7.model.HeartRateSession;
+import info.danshin.android.sandbox.model.HeartRateDataItem;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
